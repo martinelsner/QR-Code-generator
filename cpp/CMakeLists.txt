@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 3.0)
+project (QRCode)
+add_compile_options(-std=c++11)
+add_library (QRCode BitBuffer.cpp QrCode.cpp QrSegment.cpp)
+target_include_directories (QRCode PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
